@@ -1,0 +1,64 @@
+@import '../custom';
+@import '../components/mixins';
+
+
+.intro-section {
+    @include gradient;
+    padding: 10rem 0 0 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.intros {
+
+
+
+    .video-box{
+        position: relative;
+
+
+        a {
+            // @include absoluteCenter;
+
+
+            span{
+
+
+
+
+                i {
+                    font-size: 6rem;
+                    color:$third;
+                    
+
+
+
+                }
+            }
+        }
+    }
+}
+
+
+.border-animation {
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 6rem;
+    height: 6rem;
+    border: 0.55rem solid $gray-200;
+    border-radius: 50%;
+    // @include absoluteCenter;
+    animation: pulse-border 1s linear infinite;
+
+    &--border-1 {
+        animation-delay: 1s;
+
+    }
+
+    &--border-2 {
+        animation-delay: 1.8s;
+    }
+}
